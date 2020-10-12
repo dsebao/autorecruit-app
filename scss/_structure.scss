@@ -1,0 +1,15 @@
+.mainview-dashboard {
+	.mainview-dashboard__column {
+		.mainview-dashboard__title {
+			overflow: hidden;
+			margin-bottom: 16px;
+			h2 {
+				position: relative;
+				color: $textcolor;
+				font-size: 15px;
+				font-weight: 700;
+				letter-spacing: 2px;
+			}
+		}
+	}
+}

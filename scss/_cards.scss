@@ -1,0 +1,110 @@
+// Custom Card Styling
+
+.card {
+	.card-header {
+		// Format Dropdowns in Card Headings
+		.dropdown {
+			line-height: 1;
+			.dropdown-menu {
+				line-height: 1.5;
+			}
+		}
+	}
+	// Collapsable Card Styling
+	.card-header[data-toggle="collapse"] {
+		text-decoration: none;
+		position: relative;
+		padding: 0.75rem 3.25rem 0.75rem 1.25rem;
+		&::after {
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding-right: 1.725rem;
+			line-height: 51px;
+			font-weight: 900;
+			content: "\f107";
+			font-family: "Font Awesome 5 Free";
+			color: $gray-400;
+		}
+		&.collapsed {
+			border-radius: $card-border-radius;
+			&::after {
+				content: "\f105";
+			}
+		}
+	}
+}
+
+.card-app {
+	background: $white;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.07);
+	border-radius: 8px;
+	cursor: pointer;
+	padding: 20px;
+	margin-bottom: 30px;
+	transition: all 0.1s ease-in-out;
+	position: relative;
+
+	.card-app__title {
+		h3 {
+			margin-bottom: 0;
+			font-weight: 400;
+			color: $darkblue;
+			font-size: 16px;
+			position: relative;
+		}
+	}
+
+	.card-app__description {
+		color: #636d88;
+		font-size: 14px;
+	}
+
+	//Card types
+	&.card-job {
+		.card-app__title {
+			h3 {
+				padding-top: 10px;
+				&:after {
+					transition: all 0.1s ease-in-out;
+					content: "";
+					top: 0;
+					position: absolute;
+					width: 20px;
+					height: 2px;
+					left: 0;
+					background-color: $darkblue;
+				}
+			}
+		}
+	}
+
+	&.card-applicant {
+		display: flex;
+		.avatar {
+			width: 40px;
+			img {
+				border-radius: 50%;
+				width: 100%;
+			}
+		}
+		.applicant-info {
+			padding-left: 15px;
+		}
+		.card-app__title {
+			h3 {
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	//Hover
+	&:hover {
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+		background: #f6f7f9;
+		&.card-job .card-app__title h3:after {
+			background-color: $pink;
+			width: 30px;
+		}
+	}
+}
