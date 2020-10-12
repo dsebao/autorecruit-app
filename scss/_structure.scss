@@ -1,8 +1,17 @@
 .mainview-dashboard {
 	.mainview-dashboard__column {
 		.mainview-dashboard__title {
-			overflow: hidden;
-			margin-bottom: 16px;
+			margin-bottom: 25px;
+			position: relative;
+			&:after {
+				content: "";
+				height: 2px;
+				width: 100%;
+				opacity: 0.3;
+				bottom: -10px;
+				position: absolute;
+				background: $gray-400;
+			}
 			h2 {
 				position: relative;
 				color: $textcolor;

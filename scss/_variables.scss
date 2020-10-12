@@ -11,7 +11,7 @@ $white: #fff !default;
 $gray-100: #f8f9fc !default;
 $gray-200: #eaecf4 !default;
 $gray-300: #bfc4d1 !default;
-$gray-400: #d1d3e2 !default;
+$gray-400: #aeb4c5 !default;
 $gray-500: #5e6b8b !default;
 $gray-600: #858796 !default;
 $gray-700: #6e707e !default;
@@ -84,6 +84,11 @@ $register-image: "https://source.unsplash.com/Mv9hjnEUHR4/600x800" !default;
 $password-image: "https://source.unsplash.com/oWTW-jNGl9I/600x800" !default;
 
 $contentbg: #eaf2f9;
+
+$modal-xl: 1140px !default;
+$modal-lg: 800px !default;
+$modal-md: 600px !default;
+$modal-sm: 300px !default;
 
 body {
 	font-size: 16px;

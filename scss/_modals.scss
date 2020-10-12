@@ -1,0 +1,30 @@
+.modal {
+	&.modal-card-job-edit {
+		.modal-header {
+			textarea {
+				background: none;
+				border: none;
+				height: 32px;
+				width: 100%;
+				font-size: 18px;
+				color: $darkblue;
+			}
+		}
+		.modal-body {
+			textarea {
+				display: block;
+				width: 100%;
+				overflow-wrap: break-word;
+				color: $darkblue;
+				font-size: 16px;
+				min-height: 200px;
+				border: none;
+				outline: none;
+				position: relative;
+			}
+		}
+	}
+	.modal-body {
+		color: $textcolor;
+	}
+}
