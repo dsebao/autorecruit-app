@@ -162,7 +162,9 @@
 									<div class="mainview-dashboard__column">
 										<div class="mainview-dashboard__title">
 											<h2>JOBS</h2>
-											<div class="action"></div>
+											<div class="action">
+												<a href="#" class="action-btn add js-add-job" data-toggle="modal" data-target="#modal-add-job">+</a>
+											</div>
 										</div>
 										<div class="mainview-dashboard__card-wrapper wrapper-jobs">
 											<div class="card-app card-job" data-id-job="1">
@@ -335,7 +337,7 @@
 		</div>
 		<!-- End of Page Wrapper -->
 
-		<!-- Logout Modal-->
+		<!-- Edit Job-->
 		<div class="modal fade modal-card-job-edit" id="card-job-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -347,17 +349,43 @@
 					</div>
 					<div class="modal-body">
 						<textarea name="" id="">
-Sirena is the solution that helps businesses get discovered, communicate, and drive growth in the new messaging age. 
-
-Our goal is to be the leading software company for the future of conversational commerce. We have the support of the main investor groups in the region (including Mercado Libre). Our offices are located in Buenos Aires, Brazil (São Paulo) and Mexico (CDMX). 
-
-And this is just the beginning!. Job Overview: The QA Tester will help us to create & ensure quality of all our products. This involves the design of the entire process of ensuring quality all over the product.
 						</textarea>
 
 					</div>
 					<div class="modal-footer">
 						<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
 						<a class="btn btn-primary" href="">Action 1</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Add Job-->
+		<div class="modal fade modal-add-job" id="modal-add-job" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Add new job</h5>
+						<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form action="" class="form form-add-job">
+							<div class="form-group">
+								<label for="">Job title</label>
+								<input type="text" name="job-title" class="form-control" placeholder="Job title">
+							</div>
+							<div class="form-group">
+								<label for="">Skills</label>
+								<input type="text" name="job-skills" class="form-control" placeholder="Java, Python, C++">
+							</div>
+						</form>
+
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+						<a class="btn btn-primary" href="">Save Job</a>
 					</div>
 				</div>
 			</div>
