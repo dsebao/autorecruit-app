@@ -1,5 +1,5 @@
 .modal {
-	&.modal-card-job-edit {
+	&.job-modal {
 		.modal-header {
 			textarea {
 				background: none;
@@ -26,11 +26,5 @@
 	}
 	.modal-body {
 		color: $textcolor;
-	}
-
-	&.modal-add-job {
-		.modal-title {
-			color: $blue;
-		}
 	}
 }

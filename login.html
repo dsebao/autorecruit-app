@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.min.css" rel="stylesheet" />
+</head>
+
+<body class="auth">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="auth--left col-md-7 px-md-0">
+                <div class="auth--left--container">
+                    <div class="auth--logo mb-5">
+                        <a href=""><img width="200px" src="./img/logo.svg" alt="Autorecruit" /></a>
+                    </div>
+
+                    <h1 class="text-secondary mb-4">Log In</h1>
+
+                    <div class="" data-aos="fade-up" data-aos-delay="300">
+                        <form action="" method="POST" class="form needs-validation mb-4" novalidate>
+                            <div class="form-group">
+                                <label for="">EMAIL</label>
+                                <input type="email" name="email" class="form-control form-control-lg" placeholder="Your email" required />
+                                <div class="invalid-feedback">Please check this input</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">PASSWORD</label>
+                                <input type="password" name="password" class="form-control form-control-lg" placeholder="Password" required />
+                                <div class="invalid-feedback">Please check this input</div>
+                            </div>
+
+                            <p>
+                                <button type="submit" class="btn btn-primary btn-lg d-block d-md-inline-block">
+                                    SIGN IN
+                                </button>
+                            </p>
+
+                            <p class="text-notice text-secondary">
+                                Don't have an account yet? <a href="">Sign Up</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="auth--right col-md-5 px-md-0">
+                <div class="d-flex justify-content-center align-content-center h-100">
+                    <img data-aos="fade-left" data-aos-delay="200" class="mw-100" src="./img/login-persona.svg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/sortablejs/sortable.umd.js"></script>
+    <script src="vendor/sortablejs/jquery-sortable.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/app.min.js"></script>
+</body>
+</html>

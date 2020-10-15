@@ -15,50 +15,9 @@
 		<link href="css/style.min.css" rel="stylesheet" />
 	</head>
 
-	<body class="sidebar-toggled">
+	<body>
 		<!-- Page Wrapper -->
 		<div id="wrapper">
-			<!-- Sidebar -->
-			<ul class="navbar-nav sidebar sidebar-light accordion toggled" id="accordionSidebar">
-				<!-- Sidebar - Brand -->
-				<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-					<div class="sidebar-brand-icon"><img src="img/logo-icon.svg" alt="" /></div>
-					<div class="sidebar-brand-text mx-1">autorecruit</div>
-				</a>
-
-				<!-- Nav Item - Dashboard -->
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">
-						<i class="fas fa-fw fa-columns"></i>
-						<span>Dashboard</span></a
-					>
-				</li>
-
-				<!-- Nav Item - Charts -->
-				<li class="nav-item">
-					<a class="nav-link" href="">
-						<i class="fas fa-fw fa-chart-area"></i>
-						<span>Link 1</span></a
-					>
-				</li>
-
-				<!-- Nav Item - Tables -->
-				<li class="nav-item">
-					<a class="nav-link" href="">
-						<i class="fas fa-fw fa-table"></i>
-						<span>Link 2</span></a
-					>
-				</li>
-
-				<!-- Divider -->
-				<hr class="sidebar-divider d-none d-md-block" />
-
-				<!-- Sidebar Toggler (Sidebar) -->
-				<div class="text-center d-none d-md-inline">
-					<button class="rounded-circle border-0" id="sidebarToggle"></button>
-				</div>
-			</ul>
-			<!-- End of Sidebar -->
 
 			<!-- Content Wrapper -->
 			<div id="content-wrapper" class="d-flex flex-column">
@@ -66,50 +25,13 @@
 				<div id="content">
 					<!-- Topbar -->
 					<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-						<!-- Sidebar Toggle (Topbar) -->
-						<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-							<i class="fa fa-bars"></i>
-						</button>
+						<a href="" class="logo-brand mr-4">
+							<img width="140" src="./img/logo.svg" alt="">
+						</a>
 
 						<!-- Topbar Navbar -->
 						<ul class="navbar-nav ml-auto">
-							<!-- Nav Item - Search Dropdown (Visible Only XS) -->
-							<li class="nav-item dropdown no-arrow d-sm-none">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									id="searchDropdown"
-									role="button"
-									data-toggle="dropdown"
-									aria-haspopup="true"
-									aria-expanded="false"
-								>
-									<i class="fas fa-search fa-fw"></i>
-								</a>
-								<!-- Dropdown - Messages -->
-								<div
-									class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-									aria-labelledby="searchDropdown"
-								>
-									<form class="form-inline mr-auto w-100 navbar-search">
-										<div class="input-group">
-											<input
-												type="text"
-												class="form-control bg-light border-0 small"
-												placeholder="Search for..."
-												aria-label="Search"
-												aria-describedby="basic-addon2"
-											/>
-											<div class="input-group-append">
-												<button class="btn btn-primary" type="button">
-													<i class="fas fa-search fa-sm"></i>
-												</button>
-											</div>
-										</div>
-									</form>
-								</div>
-							</li>
-
+							
 							<!-- Nav Item - User Information -->
 							<li class="nav-item dropdown no-arrow">
 								<a
@@ -121,11 +43,12 @@
 									aria-haspopup="true"
 									aria-expanded="false"
 								>
-									<span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+									
 									<img
 										class="img-profile rounded-circle"
 										src="https://source.unsplash.com/QAB-WJcbgJk/60x60"
 									/>
+									<span class="ml-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
 								</a>
 								<!-- Dropdown - User Information -->
 								<div
@@ -179,7 +102,7 @@
 
 											<div class="card-app card-job" data-id-job="2">
 												<div class="card-app__edit">
-													<a data-toggle="modal" data-target="#card-job-1" href="" class="card-app__edit-link"><i class="fa fa-pen"></i></a>
+													<a data-toggle="modal" data-target="#card-job-2" href="" class="card-app__edit-link"><i class="fa fa-pen"></i></a>
 												</div>
 												<div class="card-app__title">
 													<h3>QA Tester</h3>
@@ -189,7 +112,7 @@
 
 											<div class="card-app card-job" data-id-job="3">
 												<div class="card-app__edit">
-													<a data-toggle="modal" data-target="#card-job-1" href="" class="card-app__edit-link"><i class="fa fa-pen"></i></a>
+													<a data-toggle="modal" data-target="#card-job-3" href="" class="card-app__edit-link"><i class="fa fa-pen"></i></a>
 												</div>
 												<div class="card-app__title">
 													<h3>QA Tester</h3>
@@ -270,6 +193,7 @@
 											<div class="action"></div>
 										</div>
 										<div class="mainview-dashboard__card-wrapper js-interviewing-group">
+
 											<div class="card-app card-usercard">
 												<div class="avatar">
 													<img src="https://unsplash.it/80/80" alt="">
@@ -283,6 +207,7 @@
 													</div>
 												</div>
 											</div>
+
 											<div class="card-app card-usercard">
 												<div class="avatar">
 													<img src="https://unsplash.it/80/80" alt="">
@@ -302,6 +227,7 @@
 								</div>
 								<div class="col-md-3">
 									<div class="mainview-dashboard__column">
+
 										<div class="mainview-dashboard__title">
 											<h2>HIRED</h2>
 											<div class="action"></div>
@@ -323,7 +249,6 @@
 											</div>
 											
 										</div>
-										
 									</div>
 								</div>
 							</div>
@@ -337,35 +262,47 @@
 		</div>
 		<!-- End of Page Wrapper -->
 
-		<!-- Edit Job-->
-		<div class="modal fade modal-card-job-edit" id="card-job-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<!-- Add Job-->
+		<div class="modal fade job-modal modal-add-job" id="modal-add-job" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<textarea class="modal-title" name="" id="" cols="30" rows="1">QA Tester</textarea>
+						<h5 class="modal-title">Add new job</h5>
 						<button class="close" type="button" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">×</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<textarea name="" id="">
-						</textarea>
+						<form action="" class="form form-add-job">
+							<div class="form-group">
+								<label for="">Job title</label>
+								<input type="text" name="job-title" class="form-control" placeholder="Job title">
+							</div>
+							<div class="form-group">
+								<label for="">Skills</label>
+								<input type="text" name="job-skills" class="form-control" placeholder="Java, Python, C++">
+							</div>
+							<div class="form-group">
+								<label for="">Description</label>
+								<textarea rows="5" class="form-control" name="job-description"></textarea>
+							</div>
+						</form>
 
 					</div>
 					<div class="modal-footer">
 						<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-						<a class="btn btn-primary" href="">Action 1</a>
+						<a class="btn btn-primary" href="">Save Job</a>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Add Job-->
-		<div class="modal fade modal-add-job" id="modal-add-job" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<!-- Edit Job-->
+		<div class="modal fade job-modal modal-card-job-edit" id="card-job-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title">Add new job</h5>
+						<h5 class="modal-title">Edit job</h5>
 						<button class="close" type="button" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">×</span>
 						</button>

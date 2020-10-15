@@ -30,6 +30,32 @@ $yellow: #f8c204;
 $lightyellow: #fbdc8e;
 $textcolor: #636d88;
 $gray: #f3f8fc;
+$green: #29ab87;
+$red: #cc3336;
+
+$primary: $lightblue;
+$secondary: $blue;
+$success: $green;
+$info: $lightblue;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+	(
+		"primary": $primary,
+		"secondary": $secondary,
+		"success": $success,
+		"info": $info,
+		"warning": $warning,
+		"danger": $danger,
+		"light": $light,
+		"dark": $dark
+	),
+	$theme-colors
+);
 
 // Custom Colors
 $brand-google: #ea4335 !default;
@@ -81,9 +107,9 @@ $dropdown-font-size: 0.85rem !default;
 $dropdown-border-color: $border-color !default;
 
 // Images
-$login-image: "https://source.unsplash.com/K4mSJ7kc0As/600x800" !default;
-$register-image: "https://source.unsplash.com/Mv9hjnEUHR4/600x800" !default;
-$password-image: "https://source.unsplash.com/oWTW-jNGl9I/600x800" !default;
+$login-image: none;
+$register-image: none;
+$password-image: none;
 
 $contentbg: #f4f8fc;
 

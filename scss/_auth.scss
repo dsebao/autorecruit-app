@@ -1,0 +1,20 @@
+body {
+	&.auth {
+		background: #fff;
+		.auth--right {
+			height: 100vh;
+			background: $lighterblue;
+		}
+		.auth--left--container {
+			padding: 30px 80px;
+		}
+		@include respond-below(sm) {
+			.auth--left--container {
+				padding: 20px 10px;
+			}
+			.auth--right {
+				display: none;
+			}
+		}
+	}
+}
