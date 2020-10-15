@@ -1,5 +1,16 @@
 .mainview-dashboard {
 	.mainview-dashboard__column {
+		.mainview-dashboard__card-wrapper {
+			background: rgba(0, 0, 0, 0.04);
+			border-radius: 4px;
+			padding: 10px;
+			&.wrapper-jobs {
+				background: rgba($darkblue, 0.3);
+			}
+			.card-app:last-child {
+				margin-bottom: 0;
+			}
+		}
 		.mainview-dashboard__title {
 			margin-bottom: 25px;
 			position: relative;
@@ -14,7 +25,7 @@
 			}
 			h2 {
 				position: relative;
-				color: $textcolor;
+				color: $darkblue;
 				font-size: 15px;
 				font-weight: 700;
 				letter-spacing: 2px;

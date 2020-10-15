@@ -69,13 +69,21 @@ function modules() {
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
     .pipe(gulp.dest('./vendor/jquery-easing'));
+
+  // Sortable
+  var sortableJs = gulp.src('./node_modules/sortablejs/dist/*.js')
+    .pipe(gulp.dest('./vendor/sortablejs'));
+
+  var jquerySortable = gulp.src('./node_modules/jquery-sortablejs/*.js')
+    .pipe(gulp.dest('./vendor/sortablejs'));
+
   // jQuery
   var jquery = gulp.src([
     './node_modules/jquery/dist/*',
     '!./node_modules/jquery/dist/core.js'
   ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing);
+  return merge(bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing, sortableJs, jquerySortable);
 }
 
 // CSS task

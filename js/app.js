@@ -1,3 +1,42 @@
+var candidatesDraggable = function () {
+  //Make draggable card candidates
+  $('.js-candidates-group').sortable({
+    group: 'candidates',
+    draggable: '.card-app',
+    animation: 300
+  })
+
+  $('.js-hired-group').sortable({
+    group: 'candidates',
+    draggable: '.card-app',
+    animation: 300
+  })
+
+  $('.js-interviewing-group').sortable({
+    group: 'candidates',
+    draggable: '.card-app',
+    animation: 300
+  });
+};
+
+var selectedJob = function () {
+  $('.card-job').on('click', function () {
+
+    var t = $(this);
+
+    //Id for the selected job
+    var idjob = t.data('id-job');
+
+    //Selected class for the card job
+    $('.card-job').removeClass('js-selected-job').addClass('js-not-selected');
+    t.addClass('js-selected-job').removeClass('js-not-selected');
+
+    /* HERE POPULATE THE CARDS FOR THE JOBS */
+
+  })
+};
+
+
 (function ($) {
   "use strict"; // Start of use strict
 
@@ -11,7 +50,7 @@
   });
 
   // Close any open menu accordions when window is resized below 768px
-  $(window).resize(function () {
+  $(window).on('resize', function () {
     if ($(window).width() < 768) {
       $('.sidebar .collapse').collapse('hide');
     };
@@ -34,23 +73,9 @@
     }
   });
 
-  // Scroll to top button appear
-  $(document).on('scroll', function () {
-    var scrollDistance = $(this).scrollTop();
-    if (scrollDistance > 100) {
-      $('.scroll-to-top').fadeIn();
-    } else {
-      $('.scroll-to-top').fadeOut();
-    }
-  });
+  candidatesDraggable();
 
-  // Smooth scrolling using jQuery easing
-  $(document).on('click', 'a.scroll-to-top', function (e) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: ($($anchor.attr('href')).offset().top)
-    }, 1000, 'easeInOutExpo');
-    e.preventDefault();
-  });
+  selectedJob();
+
 
 })(jQuery); // End of use strict

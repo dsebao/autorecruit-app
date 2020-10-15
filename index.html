@@ -164,8 +164,8 @@
 											<h2>JOBS</h2>
 											<div class="action"></div>
 										</div>
-										<div class="mainview-dashboard__card-wrapper">
-											<div class="card-app card-job">
+										<div class="mainview-dashboard__card-wrapper wrapper-jobs">
+											<div class="card-app card-job" data-id-job="1">
 												<div class="card-app__edit">
 													<a data-toggle="modal" data-target="#card-job-1" href="" class="card-app__edit-link"><i class="fa fa-pen"></i></a>
 												</div>
@@ -175,7 +175,7 @@
 												<div class="card-app__meta"></div>
 											</div>
 
-											<div class="card-app card-job">
+											<div class="card-app card-job" data-id-job="2">
 												<div class="card-app__edit">
 													<a data-toggle="modal" data-target="#card-job-1" href="" class="card-app__edit-link"><i class="fa fa-pen"></i></a>
 												</div>
@@ -185,7 +185,7 @@
 												<div class="card-app__meta"></div>
 											</div>
 
-											<div class="card-app card-job">
+											<div class="card-app card-job" data-id-job="3">
 												<div class="card-app__edit">
 													<a data-toggle="modal" data-target="#card-job-1" href="" class="card-app__edit-link"><i class="fa fa-pen"></i></a>
 												</div>
@@ -203,7 +203,7 @@
 											<h2>CANDIDATES</h2>
 											<div class="action"></div>
 										</div>
-										<div class="mainview-dashboard__card-wrapper">
+										<div class="mainview-dashboard__card-wrapper js-candidates-group">
 											<div class="card-app card-usercard">
 												<div class="avatar">
 													<img src="https://unsplash.it/80/80" alt="">
@@ -224,7 +224,7 @@
 												</div>
 												<div class="usercard-info">
 													<div class="card-app__title">
-														<h3>John Greenwood</h3>
+														<h3>Loius Clark</h3>
 													</div>
 													<div class="card-app__description">
 														Senior QA Tester 
@@ -237,7 +237,7 @@
 												</div>
 												<div class="usercard-info">
 													<div class="card-app__title">
-														<h3>John Greenwood</h3>
+														<h3>Matt grimbek</h3>
 													</div>
 													<div class="card-app__description">
 														Senior QA Tester 
@@ -250,7 +250,7 @@
 												</div>
 												<div class="usercard-info">
 													<div class="card-app__title">
-														<h3>John Greenwood</h3>
+														<h3>John Tulx</h3>
 													</div>
 													<div class="card-app__description">
 														Senior QA Tester 
@@ -267,14 +267,14 @@
 											<h2>INTERVIEWING</h2>
 											<div class="action"></div>
 										</div>
-										<div class="mainview-dashboard__card-wrapper">
+										<div class="mainview-dashboard__card-wrapper js-interviewing-group">
 											<div class="card-app card-usercard">
 												<div class="avatar">
 													<img src="https://unsplash.it/80/80" alt="">
 												</div>
 												<div class="usercard-info">
 													<div class="card-app__title">
-														<h3>John Greenwood</h3>
+														<h3>Ralph Luxz</h3>
 													</div>
 													<div class="card-app__description">
 														Senior QA Tester 
@@ -287,7 +287,7 @@
 												</div>
 												<div class="usercard-info">
 													<div class="card-app__title">
-														<h3>John Greenwood</h3>
+														<h3>Juan Delmonte</h3>
 													</div>
 													<div class="card-app__description">
 														Senior QA Tester 
@@ -305,7 +305,7 @@
 											<div class="action"></div>
 										</div>
 
-										<div class="mainview-dashboard__card-wrapper">
+										<div class="mainview-dashboard__card-wrapper js-hired-group">
 											<div class="card-app card-usercard">
 												<div class="avatar">
 													<img src="https://unsplash.it/80/80" alt="">
@@ -369,6 +369,8 @@ And this is just the beginning!. Job Overview: The QA Tester will help us to cre
 
 		<!-- Core plugin JavaScript-->
 		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+		<script src="vendor/sortablejs/sortable.umd.js"></script>
+		<script src="vendor/sortablejs/jquery-sortable.js"></script>
 
 		<!-- Custom scripts for all pages-->
 		<script src="js/app.min.js"></script>
