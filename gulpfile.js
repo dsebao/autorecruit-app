@@ -12,6 +12,7 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
+const concat = require('gulp-concat');
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -113,26 +114,22 @@ function css() {
 
 // JS task
 function js() {
-  return gulp
-    .src([
-      './js/*.js',
-      '!./js/*.min.js',
-    ])
+
+  return gulp.src(['./js/development/**/*.js'])
+    .pipe(concat('./app.js'))
+    .pipe(gulp.dest('./js'))
+    .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
-    .pipe(header(banner, {
-      pkg: pkg
-    }))
-    .pipe(rename({
-      suffix: '.min'
-    }))
     .pipe(gulp.dest('./js'))
     .pipe(browsersync.stream());
 }
 
+
+
 // Watch files
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
-  gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
+  gulp.watch(["./js/development/*"], js);
   gulp.watch("./**/*.html", browserSyncReload);
 }
 

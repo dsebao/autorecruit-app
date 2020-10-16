@@ -69,3 +69,30 @@ select.form-control:focus::-ms-value {
 		box-shadow: 0 0 0 0.2rem rgba(48, 210, 239, 0.25);
 	}
 }
+
+form.form-modal-job {
+	textarea {
+		resize: none;
+		overflow-y: visible;
+		overflow-wrap: break-word;
+		height: 100%;
+	}
+	&.form-edit {
+		.editable-textarea {
+			.editable-textarea__textarea {
+				display: none;
+			}
+			.editable-textarea__preview {
+				display: block;
+			}
+			&.js-editable {
+				.editable-textarea__textarea {
+					display: block;
+				}
+				.editable-textarea__preview {
+					display: none;
+				}
+			}
+		}
+	}
+}

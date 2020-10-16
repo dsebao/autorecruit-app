@@ -273,7 +273,7 @@
 						</button>
 					</div>
 					<div class="modal-body">
-						<form action="" class="form form-add-job">
+						<form action="" class="form form-modal-job form-add">
 							<div class="form-group">
 								<label for="">Job title</label>
 								<input type="text" name="job-title" class="form-control" placeholder="Job title">
@@ -308,7 +308,7 @@
 						</button>
 					</div>
 					<div class="modal-body">
-						<form action="" class="form form-add-job">
+						<form action="" class="form form-modal-job form-edit">
 							<div class="form-group">
 								<label for="">Job title</label>
 								<input type="text" name="job-title" class="form-control" placeholder="Job title">
@@ -319,7 +319,46 @@
 							</div>
 							<div class="form-group">
 								<label for="">Description</label>
-								<textarea rows="5" class="form-control" name="job-description"></textarea>
+								<div class="editable-textarea">
+								<textarea class="form-control editable-textarea__textarea" name="job-description">
+Pricing:
+- Free
+- 10 basic candidate intros per month
+- Unlimited basic profile views
+
+Standard 
+- $100/month 
+- 30 top tier candidate intros 
+- Unlimited basic candidate intros
+- Unlimited premium profile and skills report views
+- Receive credits when candidates respond
+
+Premium
+- $250/month
+- 100 top-tier candidate intros per month
+- Unlimited basic candidate intros
+- Receive credits when candidates respond
+								</textarea>
+								<div class="editable-textarea__preview">
+									Pricing:
+									- Free
+									- 10 basic candidate intros per month
+									- Unlimited basic profile views
+									
+									Standard 
+									- $100/month 
+									- 30 top tier candidate intros 
+									- Unlimited basic candidate intros
+									- Unlimited premium profile and skills report views
+									- Receive credits when candidates respond
+									
+									Premium
+									- $250/month
+									- 100 top-tier candidate intros per month
+									- Unlimited basic candidate intros
+									- Receive credits when candidates respond
+								</div>
+								</div>
 							</div>
 						</form>
 
