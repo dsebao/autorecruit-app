@@ -5,7 +5,13 @@ $(function () {
 
     var finishEditJob = function () {
         $('.job-modal').on('click', function () {
-            $(this).find('.editable-textarea').removeClass('js-editable');
+            var wrap = $(this).find('.editable-textarea');
+            wrap.removeClass('js-editable');
+
+            var txta = wrap.find('.editable-textarea__textarea');
+
+            var preview = wrap.find('.editable-textarea__preview');
+            preview.html(txta.parseAsMarkdown());
 
             //HERE PUT THE ACTION TO SAVE THE TEXT
         });
