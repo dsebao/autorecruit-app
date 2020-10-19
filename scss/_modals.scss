@@ -4,4 +4,10 @@
 	.modal-body {
 		color: $textcolor;
 	}
+	.modal-header {
+		.modal-title {
+			font-weight: 700;
+			color: $blue;
+		}
+	}
 }

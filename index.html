@@ -30,7 +30,22 @@
 						</a>
 
 						<!-- Topbar Navbar -->
-						<ul class="navbar-nav ml-auto">
+						<ul class="navbar-nav ml-auto">		
+							
+							<li class="nav-item dropdown no-arrow mx-1">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fas fa-bars fa-fw"></i>
+								</a>
+								<!-- Dropdown - Alerts -->
+								<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+									<a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-pricing">
+										<i class="fas fa-rocket fa-sm fa-fw mr-2 text-gray-400"></i>Upgrade</a>
+									<a class="dropdown-item" href="#">
+										<i class="fas fa-life-ring fa-sm fa-fw mr-2 text-gray-400"></i>Help</a>
+									<a class="dropdown-item" href="#">
+										<i class="fas fa-file-alt fa-sm fa-fw mr-2 text-gray-400"></i>About us</a>
+								</div>
+							  </li>	
 							
 							<!-- Nav Item - User Information -->
 							<li class="nav-item dropdown no-arrow">
@@ -269,7 +284,7 @@
 					<div class="modal-header">
 						<h5 class="modal-title">Add new job</h5>
 						<button class="close" type="button" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">×</span>
+							<span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
 						</button>
 					</div>
 					<div class="modal-body">
@@ -304,7 +319,7 @@
 					<div class="modal-header">
 						<h5 class="modal-title">Edit job</h5>
 						<button class="close" type="button" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">×</span>
+							<span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
 						</button>
 					</div>
 					<div class="modal-body">
@@ -366,6 +381,56 @@ Premium
 					<div class="modal-footer">
 						<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
 						<a class="btn btn-primary" href="">Save Job</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Add Job-->
+		<div class="modal fade modal-pricing" id="modal-pricing" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Upgrade</h5>
+						<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<div class="row pricing-component">
+							<div class="col-12 col-lg-6">
+								<div class="pricing-item text-center px-md-3 py-md-4">
+									<h3>Standard</h3>
+									<hr class="mb-4">
+		
+									<p class="pricing-item-cost">$ 20 <span class="lead">/ month</span></p>
+									<hr />
+									<div class="items mb-4">
+										List kajs kajskajs kajsk
+									</div>
+									<p>
+										<a href="" class="btn btn-primary btn-lg btn-block">Upgrade</a>
+									</p>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6">
+								<div class="pricing-item text-center px-md-3 py-md-4">
+									<h3>Standard</h3>
+									<hr class="mb-4">
+		
+									<p class="pricing-item-cost">$ 20 <span class="lead">/ month</span></p>
+									<hr />
+									<div class="items mb-4">
+										List kajs kajskajs kajsk
+									</div>
+									<p>
+										<a href="" class="btn btn-primary btn-lg btn-block">Upgrade</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>

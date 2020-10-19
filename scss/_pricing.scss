@@ -1,0 +1,28 @@
+.pricing-component {
+	.pricing-item {
+		background: $gray-100;
+		border-radius: $border-radius;
+		@include transition(all 0.3s ease);
+		h3 {
+			font-size: 25px;
+			color: $lightblue;
+			font-weight: 400;
+		}
+		.pricing-item-cost {
+			font-size: 30px;
+			font-weight: 700;
+			color: $blue;
+			span.lead {
+				font-size: 17px;
+				color: $blue;
+			}
+		}
+		.items {
+			p {
+				font-style: italic;
+			}
+		}
+		&:hover {
+		}
+	}
+}

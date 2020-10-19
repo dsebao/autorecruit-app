@@ -5,8 +5,8 @@
 			border-radius: 4px;
 			padding: 10px;
 			&.wrapper-jobs {
-				background-color: #dfca6d;
-				background-image: linear-gradient(160deg, #dfca6d 0%, #20d2f1 100%);
+				background-color: $grad2;
+				background-image: linear-gradient(160deg, $grad2 0%, $lightblue 100%);
 			}
 			.card-app:last-child {
 				margin-bottom: 0;
