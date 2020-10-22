@@ -2,25 +2,50 @@
 //CANDIDATES DRAGGABLE
 
 $(function () {
+    var scoreGraph = function () {
+        $('.card-score').each(function (i) {
+            var el = $(this);
+            var data = el.data('value');
+            var svg = el.find('svg circle');
+            var w = svg.css('stroke-dasharray', data + ' 100');
+        })
+    }
+
+    //This function trigger the chart donnut values to the svg
+    scoreGraph();
 
     var candidatesDraggable = function () {
         //Make draggable card candidates
         $('.js-candidates-group').sortable({
             group: 'candidates',
             draggable: '.card-app',
-            animation: 300
+            animation: 300,
+
+            onSort: function (event) {
+                console.log('Position: ' + event.newIndex);
+                var to = event.to;
+                console.log(to);
+            },
         })
 
         $('.js-hired-group').sortable({
             group: 'candidates',
             draggable: '.card-app',
-            animation: 300
+            animation: 300,
+            onSort: function (event) {
+                console.log('Position: ' + event.newIndex);
+                console.log('List: ' + event.to.data('list'));
+            },
         })
 
         $('.js-interviewing-group').sortable({
             group: 'candidates',
             draggable: '.card-app',
-            animation: 300
+            animation: 300,
+            onSort: function (event) {
+                console.log('Position: ' + event.newIndex);
+                console.log('List: ' + event.to.data('list'));
+            },
         });
     };
 

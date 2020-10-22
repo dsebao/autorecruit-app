@@ -112,7 +112,10 @@
 	}
 
 	&.card-usercard {
-		display: flex;
+		flex-basis: 100%;
+		.card-usercard-wrap {
+			display: flex;
+		}
 		.avatar {
 			width: 40px;
 			img {
@@ -121,12 +124,20 @@
 			}
 		}
 		.usercard-info {
+			flex-basis: 100%;
 			padding-left: 10px;
 		}
 		.card-app__title {
 			h3 {
 				color: $blue;
 				margin-bottom: 5px;
+			}
+		}
+		.card-score {
+			width: 35px;
+			.donut-chart {
+				width: 36px;
+				height: 36px;
 			}
 		}
 	}
