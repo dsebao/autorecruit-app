@@ -126,7 +126,8 @@ $(function () {
             animation: 300,
             onSort: function (event) {
                 console.log('Position: ' + event.newIndex);
-                console.log('List: ' + event.to.data('list'));
+                var to = event.to;
+                console.log(to);
             },
         })
 
@@ -136,7 +137,8 @@ $(function () {
             animation: 300,
             onSort: function (event) {
                 console.log('Position: ' + event.newIndex);
-                console.log('List: ' + event.to.data('list'));
+                var to = event.to;
+                console.log(to);
             },
         });
     };
