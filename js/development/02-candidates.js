@@ -1,7 +1,20 @@
 
-//CANDIDATES DRAGGABLE
+//CANDIDATES
 
 $(function () {
+
+    var changeInitials = function () {
+        $('.usercard-info h3').each(function (i) {
+            var el = $(this);
+            var initials = el.text().match(/\b\w/g) || [];
+            initials = ((initials.shift() || '') + (initials.pop() || '')).toUpperCase();
+            el.text(initials);
+        })
+    }
+
+    //Change username to initials
+    changeInitials();
+
     var scoreGraph = function () {
         $('.card-score').each(function (i) {
             var el = $(this);
