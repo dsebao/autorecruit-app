@@ -1,0 +1,25 @@
+.badge {
+	font-weight: 700;
+	border-radius: 2px;
+	color: $textcolor;
+	&.badge-sm {
+		font-size: 13px;
+		line-height: 17px;
+		padding: 3px 10px;
+		font-size: 10px;
+	}
+	&.badge-primary {
+		background-color: rgba($cyan, 0.3);
+	}
+	&.badge-secondary {
+		background-color: rgba($yellow, 0.3);
+	}
+	&.badge-terciary {
+		background: rgba($green, 0.3);
+	}
+	svg {
+		position: relative;
+		top: -1px;
+		fill: $textcolor;
+	}
+}

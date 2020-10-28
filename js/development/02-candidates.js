@@ -1,10 +1,11 @@
 
+
 //CANDIDATES
 
 $(function () {
 
     var changeInitials = function () {
-        $('.usercard-info h3').each(function (i) {
+        $('.initials').each(function (i) {
             var el = $(this);
             var initials = el.text().match(/\b\w/g) || [];
             initials = ((initials.shift() || '') + (initials.pop() || '')).toUpperCase();
@@ -76,11 +77,8 @@ $(function () {
             $('.card-job').removeClass('js-selected-job').addClass('js-not-selected');
             t.addClass('js-selected-job').removeClass('js-not-selected');
 
-            /* HERE POPULATE THE CARDS FOR THE JOBS */
-
         })
     };
-
 
     candidatesDraggable();
 

@@ -1,9 +1,14 @@
 .progress-sm {
-	height: 0.5rem;
+	height: 5px;
+	.progress-bar {
+		background: linear-gradient(270deg, #11cfac 0%, #1e96be 100%);
+	}
 }
 
 .donut-chart {
 	position: relative;
+	width: 50px;
+	height: 50px;
 	circle {
 		stroke-dasharray: 0 100;
 	}
@@ -38,8 +43,5 @@
 			font-size: 11px;
 			line-height: 17px;
 		}
-	}
-	.skill {
-		font-size: 12px;
 	}
 }

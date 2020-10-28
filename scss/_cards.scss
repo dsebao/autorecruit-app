@@ -44,6 +44,8 @@
 	transition: all 0.1s ease-in-out;
 	position: relative;
 	min-height: 70px;
+	color: #636d88;
+	font-size: 13px;
 
 	.card-app__title {
 		h3 {
@@ -76,11 +78,6 @@
 		}
 	}
 
-	.card-app__description {
-		color: #636d88;
-		font-size: 13px;
-	}
-
 	//Card types
 	&.card-job {
 		.card-app__title {
@@ -109,6 +106,16 @@
 		&.js-not-selected {
 			opacity: 0.8;
 		}
+		.card-app__meta {
+			margin-top: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.badge {
+			padding: 3px 7px;
+			font-size: 11px;
+		}
 	}
 
 	&.card-usercard {
@@ -116,8 +123,21 @@
 		.card-usercard-wrap {
 			display: flex;
 		}
+		.avatar-circle {
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			border-radius: 50%;
+			background: rgb(32, 191, 219);
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
+		}
 		.card-usercard__actions {
 			display: flex;
+			margin-top: 10px;
 			justify-content: flex-end;
 			.btn.btn-action {
 				padding: 5px 10px;
@@ -142,21 +162,25 @@
 				width: 100%;
 			}
 		}
-		.usercard-info {
+		.card-usercard-info {
 			flex-basis: 100%;
 			padding-left: 10px;
 		}
-		.card-app__title {
-			h3 {
-				color: $blue;
-				margin-bottom: 5px;
+		.card-usercard-actions {
+			.badge {
+				margin-right: 5px;
 			}
 		}
-		.card-score {
-			width: 35px;
-			.donut-chart {
-				width: 36px;
-				height: 36px;
+		.card-usercard-skills {
+			margin-top: 10px;
+			.skill {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				.progress {
+					width: 60px;
+					margin-right: 10px;
+				}
 			}
 		}
 	}
